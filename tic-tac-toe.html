@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="https://cdn3.iconfinder.com/data/icons/brain-games/1042/Tic-Tac-Toe-Game-grey.png">
+    <title>Tic-Tac-Toe</title>
+    <style>
+        body{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            height: 100vh;
+            margin: 0;
+             background: linear-gradient(to right, rgb(159, 136, 240), rgb(20, 116, 148)); 
+            transition: background 1s ease; 
+            color: white;
+        }
+        button{
+            height: 50px;
+            width: 70px;
+            border-radius: 10px;
+            font-weight: bold;
+        }
+        #X{
+            background-color: black;
+            color: aliceblue;
+            border-color: bisque;
+        }
+        #O{
+            background-color: yellowgreen;
+            color: yellow;
+            border-color: yellowgreen;
+        }
+        .grid-container{
+            display: grid;
+            grid-template-columns: repeat(3,100px);
+            grid-template-rows: 100px 100px 100px;
+            gap: 5px;
+        }
+        .grid-item {
+            border: 2px solid rgb(25, 5, 112);
+            display: flex;
+            justify-content: center;  /* Horizontally center */
+            align-items: center;      /* Vertically center */
+            font-size: 2rem;          /* Optional: make X/O bigger */
+            font-weight: bold;
+            color: white;             /* Ensure contrast */
+        }
+
+        #reset{
+            background-color: rgb(237, 232, 232);
+            color: blue;
+            border-color: rgb(11, 67, 170);
+        }
+    </style>
+</head>
+<body>
+    <h1>tic tac toe</h1>
+
+    <button id="X">X</button>
+
+    <br>
+
+    <button id="O">O</button>
+
+    <br>
+    <br>
+
+    <div class="grid-container">
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+    </div>
+
+    <br>
+    <br>
+
+    <button id="reset">Reset</button>
+    <script src="tic-tac-toe.js"></script>
+</body>
+</html>
