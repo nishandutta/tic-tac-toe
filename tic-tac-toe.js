@@ -66,6 +66,7 @@ restButton.addEventListener("click", function() {
     startWithO = true;
     bigbox.style.pointerEvents = "auto";
     X.style.pointerEvents = "auto";
+    X.disabled=false;
     moves=0;
     gameOver = false;
 });
